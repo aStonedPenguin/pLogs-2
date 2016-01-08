@@ -7,7 +7,7 @@ plogs.cfg 	= plogs.cfg 	or {}
 plogs.types	= plogs.types	or {}
 plogs.data	= plogs.data	or {}
 
-plogs.Version = '2.7'
+plogs.Version = '2.7.1'
 
 function plogs.Error(str)
 	return ErrorNoHalt('[pLogs] ' .. str)
@@ -20,7 +20,6 @@ include_sv 'plogs/lib/table.lua'
 
 include_sh 'plogs_cfg.lua' 
 include_sh 'plogs/workarounds/sanity_checker.lua'
-include_sv 'plogs/workarounds/hook.lua'
 
 if (SERVER) and plogs.cfg.EnableMySQL then
 	include_sv 'plogs_mysql_cfg.lua'
