@@ -103,7 +103,7 @@ end
 function SKIN:PaintWindowCloseButton(panel, w, h)
 	if not (panel.m_bBackground) then return end
 
-	draw.SimpleText('x', 'plogs.ui.26', 11, 0, (self.Hovered and SKIN.CloseHovered or SKIN.Close), TEXT_ALIGN_LEFT, TEXT_ALIGN_BOTTOM) 
+	draw.SimpleText('x', 'plogs.ui.26', 11, 0, (self.Hovered and SKIN.CloseHovered or SKIN.Close), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP) 
 end
 
 ----------------------------------------------------------------
